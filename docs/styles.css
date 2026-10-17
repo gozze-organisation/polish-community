@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+      
+    /* 1. Definiujemy liniowy gradient z kilkoma kolorami (możesz wpisać własne) */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      
+    /* 2. Powiększamy tło, żeby było z czego "wycinać" animację */
+    background-size: 400% 400%;
+      
+    /* 3. Przypisujemy animację: nazwa (falowanie), czas (15 sekund), płynność (ease) i nieskończone powtarzanie (infinite) */
+    animation: falowanie 15s ease infinite;
+  }
+
+    /* 4. Tworzymy regułę, która przesuwa tło w trakcie trwania animacji */
+  @keyframes falowanie {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
