@@ -1,10 +1,14 @@
+* {
+    box-sizing: border-box;;
+}
+
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
       
     /* 1. Definiujemy liniowy gradient z kilkoma kolorami (możesz wpisać własne) */
-    background: linear-gradient(-45deg, #FF0000, #D13F3F, #AD2B2B, #540808);
+    background: linear-gradient(-45deg, #78181a, #bd2628, #78181a, #FF0000, #78181a, #FF0000);
       
     /* 2. Powiększamy tło, żeby było z czego "wycinać" animację */
     background-size: 400% 400%;
