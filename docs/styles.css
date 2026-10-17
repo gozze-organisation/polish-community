@@ -5,31 +5,82 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-      
-    /* 1. Definiujemy liniowy gradient z kilkoma kolorami (możesz wpisać własne) */
-    background: linear-gradient(-45deg, #78181a, #bd2628, #78181a, #FF0000, #78181a, #FF0000);
+    border: 0;
+}
+
+/* 4. Tworzymy regułę, która przesuwa tło w trakcie trwania animacji */
+@keyframes falowanie {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.center-banner {
+    padding-top: 1px;
+    padding-bottom: 1vh;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #2f2f2f;
+    background-image: url("https://giphy.com/gifs/pogu-NSwBuqIpYTel7KzoBA");
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+    background: linear-gradient(-37deg, #0f0f0f, #1d1e1f, #262626, #323436, #393a3b, #262626, #323436, #393a3b, #5e5e5e, #898b8f, #c7c7c7);
       
     /* 2. Powiększamy tło, żeby było z czego "wycinać" animację */
     background-size: 400% 400%;
       
     /* 3. Przypisujemy animację: nazwa (falowanie), czas (15 sekund), płynność (ease) i nieskończone powtarzanie (infinite) */
     animation: falowanie 15s ease infinite;
-  }
+}
 
-    /* 4. Tworzymy regułę, która przesuwa tło w trakcie trwania animacji */
-  @keyframes falowanie {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+.self-left-20 {
+    padding-left: 20px;
+}
 
-  .center {
-      text-align: center;
-  }
+.page-main {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    width: 280px;
+    height: auto;
+    border: 3px solid dimgray;
+    border-radius: 10px;
+    line-height: 0;
+    padding: 5px;
+}
+
+.page-main h4 {
+    padding: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0px;
+    color: darksalmon;
+    padding-bottom: 8px;
+}
+
+.page-main a {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: slateblue;
+}
+
+main {
+    padding-top: 40px;
+    line-height: 1.0;
+}
